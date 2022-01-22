@@ -4,7 +4,7 @@ import streamlit as st
 from tensorflow import keras
 from keras.models import load_model
 from keras.preprocessing.image import img_to_array
-
+from streamlit_webrtc import webrtc_streamer, VideoTransformerBase
 
 # load model
 emotion_dict = ["Angry","Disgust","Fear","Happy","Neutral","Sad","Surprise"]
@@ -12,7 +12,7 @@ emotion_dict = ["Angry","Disgust","Fear","Happy","Neutral","Sad","Surprise"]
 classifier =load_model('Danish_CNN_model.h5')
 
 # load weights into new model
-classifier.load_weights("Danish_CNN_model.h5")
+classifier.load_weights('Danish_CNN_model.h5')
 
 #load face
 try:
@@ -52,8 +52,9 @@ def main():
     activiteis = ["Home", "Webcam Face Detection", "About"]
     choice = st.sidebar.selectbox("Select Activity", activiteis)
     st.sidebar.markdown(
-        """ Developed by Mohd Danish. 
-        [Mohd Danish LinkedIn] (https://www.linkedin.com/in/mohd-danish-a90844184/)""")
+        """ Developed by Rahul Kumar soni and Ali Asgar lakadwala. 
+        [Rahul kumar soni LinkedIn] (https://www.linkedin.com/in/rahulsoni1b9757168/)   
+        [Ali asgar lakadwala LinkedIn] (https://www.linkedin.com/in/ali-asgar-lakdawala/)""")
     if choice == "Home":
         html_temp_home1 = """<div style="background-color:#6D7B8D;padding:10px">
                                             <h4 style="color:white;text-align:center;">
@@ -82,7 +83,7 @@ def main():
 
         html_temp4 = """
                                     <div style="background-color:#98AFC7;padding:10px">
-                                    <h4 style="color:white;text-align:center;">This Application is developed by Mohd Danish
+                                    <h4 style="color:white;text-align:center;">This Application is developed by Rahul Kumar Soni and Ali Asgar Lakdawala
                                     using Streamlit Framework, Opencv, Tensorflow and Keras library for demonstration purpose. </h4>
                                     <h4 style="color:white;text-align:center;">Thanks for Visiting</h4>
                                     </div>
