@@ -30,3 +30,4 @@ I have built a deep learning model which detects the real time emotions of stude
 ## Model Creation
 1) Using Deep Face
 DeepFace is a deep learning facial recognition system created by a research group at Facebook. It identifies human faces in digital images. The program employs a nine-layer neural network with over 120 million connection weights and was trained on four million images uploaded by Facebook users.The Facebook Research team has stated that the DeepFace method reaches an accuracy of 97.35% ± 0.25% on Labeled Faces in the Wild (LFW) data set where human beings have 97.53%. This means that DeepFace is sometimes more successful than the human beings.
+https://github.com/Mdanish2020/Face_Emotion_Recognition/blob/main/Deep_Face.jpg
